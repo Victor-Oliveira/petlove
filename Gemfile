@@ -49,6 +49,8 @@ group :development, :test do
   gem 'shoulda-matchers'
   # A Pry initializer for Rails' console
   gem 'pry-rails'
+  # A Ruby gem to load environment variables from `.env`
+  gem 'dotenv-rails'
 end
 
 group :development do
