@@ -30,4 +30,40 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    models:
+      person:
+        one: Person
+        other: People
+      animal:
+        one: Animal
+        other: Animals
+      animal_type:
+        one: Animal type
+        other: Animal types
+    attributes:
+      person:
+        name: Name
+        paper_number: Paper number
+        birth_date: Birth date
+      animal:
+        name: Name
+        monthly_cost: Monthly Cost
+      animal_type:
+        name: Name
+    errors:
+      models:
+        animal:
+          over_monthly_cost: "%{person}'s animals monthly cost is higher than the permitted"
+          type_not_allowed_by_initial: "%{person} can't have a animal with the animal type %{animal_type}, because his/her name starts with the letter %{initial_letter}"
+          not_allowed_by_person_minimum_age: "The person must be %{minimum_age} or older to have an animal with the animal type %{animal_type}"
+  back: Back
+  edit: Edit
+  show: Show
+  destroy: Delete
+  new: "New %{model}"
+  editing: "Editing %{model}"
+  confirm: Are you sure?
+  create: "%{model} was successfully created"
+  update: "%{model} was successfully updated"
+  delete: "%{model} was successfully destroyed"

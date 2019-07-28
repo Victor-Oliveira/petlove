@@ -51,6 +51,8 @@ group :development, :test do
   gem 'pry-rails'
   # A Ruby gem to load environment variables from `.env`
   gem 'dotenv-rails'
+  # Brings back `assigns` and `assert_template` to your Rails tests
+  gem 'rails-controller-testing'
 end
 
 group :development do

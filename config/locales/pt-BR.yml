@@ -26,3 +26,13 @@ pt-BR:
           over_monthly_cost: "%{person} está com o custo mensal de animais acima do valor permitido"
           type_not_allowed_by_initial: "%{person} não pode ter animais do tipo %{animal_type}, pois o nome inicia com a letra %{initial_letter}"
           not_allowed_by_person_minimum_age: "É necessario ter acima de %{minimum_age} anos para poder ter animais do tipo %{animal_type}"
+  back: Voltar
+  edit: Editar
+  show: Exibir
+  destroy: Deletar
+  new: "Novo(a) %{model}"
+  editing: "Editando %{model}"
+  confirm: Tem certeza?
+  create: "%{model} criado(a) com sucesso"
+  update: "%{model} atualizado(a) com sucesso"
+  delete: "%{model} deletado(a) com sucesso"

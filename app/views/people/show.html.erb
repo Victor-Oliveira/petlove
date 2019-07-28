@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t('activerecord.attributes.person.name') %>:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong><%= t('activerecord.attributes.person.paper_number') %>:</strong>
+  <%= @person.paper_number %>
+</p>
+
+<p>
+  <strong><%= t('activerecord.attributes.person.birth_date') %>:</strong>
+  <%= l(@person.birth_date) %>
+</p>
+
+<%= link_to t(:edit), edit_person_path(@person) %> |
+<%= link_to t(:back), people_path %>
