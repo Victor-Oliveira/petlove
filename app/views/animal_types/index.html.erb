@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t('activerecord.models.animal_type.other') %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t('activerecord.attributes.animal_type.name') %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @animal_types.each do |animal_type| %>
+      <tr>
+        <td><%= animal_type.name %></td>
+        <td><%= link_to t(:show), animal_type %></td>
+        <td>
+          <%= link_to t(:edit), edit_animal_type_path(animal_type) %>
+        </td>
+        <td>
+          <%= link_to t(:destroy), animal_type,
+            method: :delete, data: { confirm: t(:confirm) }%>    
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t(:new, model: t('activerecord.models.animal_type.one')),
+  new_animal_type_path %>

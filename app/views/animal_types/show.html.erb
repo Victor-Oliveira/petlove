@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t('activerecord.attributes.animal_type.name') %>:</strong>
+  <%= @animal_type.name %>
+</p>
+
+<%= link_to t(:edit), edit_animal_type_path(@animal_type) %> |
+<%= link_to t(:back), animal_types_path %>
