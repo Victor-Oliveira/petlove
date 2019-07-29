@@ -1,0 +1,6 @@
+<h1><%= t(:editing, model: t('activerecord.models.animal.one')) %></h1>
+
+<%= render 'form', animal: @animal %>
+
+<%= link_to t(:show), person_animal_path(@person, @animal) %> |
+<%= link_to t(:back), person_animals_path(@person) %>

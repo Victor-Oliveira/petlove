@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t('activerecord.attributes.animal.name') %>:</strong>
+  <%= @animal.name %>
+</p>
+
+<p>
+  <strong><%= t('activerecord.attributes.animal.monthly_cost') %>:</strong>
+  <%= @animal.monthly_cost %>
+</p>
+
+<p>
+  <strong><%= t('activerecord.attributes.animal.person') %>:</strong>
+  <%= @animal.person.name %>
+</p>
+
+<p>
+  <strong><%= t('activerecord.attributes.animal.animal_type') %>:</strong>
+  <%= @animal.animal_type.name %>
+</p>
+
+<%= link_to t(:edit), edit_person_animal_path(@person, @animal) %> |
+<%= link_to t(:back), person_animals_path(@person) %>

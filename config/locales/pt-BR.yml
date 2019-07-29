@@ -18,6 +18,8 @@ pt-BR:
       animal:
         name: Nome
         monthly_cost: Custo mensal
+        person: Nome da Pessoa
+        animal_type: Tipo do animal
       animal_type:
         name: Nome
     errors:

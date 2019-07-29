@@ -49,6 +49,8 @@ en:
       animal:
         name: Name
         monthly_cost: Monthly Cost
+        person: Person's name
+        animal_type: Animal type
       animal_type:
         name: Name
     errors:

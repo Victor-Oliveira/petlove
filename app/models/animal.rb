@@ -17,7 +17,19 @@ class Animal < ApplicationRecord
   belongs_to :person
   belongs_to :animal_type
 
-  validates_presence_of :name, :monthly_cost
+  validates_presence_of :name
+  validates :monthly_cost, presence: true,
+                           numericality: { greater_than: 0 }
 
   validates_with AnimalValidator
+
+  def monthly_cost=(param)
+    return unless param
+
+    self[:monthly_cost] = if param.is_a?(Numeric)
+                            param
+                          else
+                            param.gsub(',', '.')
+                          end
+  end
 end
