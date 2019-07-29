@@ -55,6 +55,7 @@ en:
         name: Name
     errors:
       models:
+        errors_message: "prohibited this %{model} from being saved"
         animal:
           over_monthly_cost: "%{person}'s animals monthly cost is higher than the permitted"
           type_not_allowed_by_initial: "%{person} can't have a animal with the animal type %{animal_type}, because his/her name starts with the letter %{initial_letter}"

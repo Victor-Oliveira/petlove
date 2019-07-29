@@ -23,6 +23,7 @@ pt-BR:
       animal_type:
         name: Nome
     errors:
+      errors_message: "impediu(ram) este(a) %{model} de ser registrado(a)"
       models:
         animal:
           over_monthly_cost: "%{person} está com o custo mensal de animais acima do valor permitido"

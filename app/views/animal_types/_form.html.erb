@@ -1,7 +1,11 @@
 <%= form_with(model: animal_type, local: true) do |form| %>
   <% if animal_type.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(animal_type.errors.count, "error") %> prohibited this animal_type from being saved:</h2>
+      <h2>
+        <%= pluralize(animal_type.errors.count, "erro(s)") %>
+        <%= t('activerecord.models.errors.errors_message',
+          model: t('activerecord.attributes.animal_type.name')) %>:
+      </h2>
 
       <ul>
       <% animal_type.errors.full_messages.each do |message| %>
