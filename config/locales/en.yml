@@ -70,3 +70,7 @@ en:
   create: "%{model} was successfully created"
   update: "%{model} was successfully updated"
   delete: "%{model} was successfully destroyed"
+  home:
+    list: "%{model} list"
+  people:
+    animals: "Register animal"

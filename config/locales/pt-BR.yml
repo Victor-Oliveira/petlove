@@ -39,3 +39,7 @@ pt-BR:
   create: "%{model} criado(a) com sucesso"
   update: "%{model} atualizado(a) com sucesso"
   delete: "%{model} deletado(a) com sucesso"
+  home:
+    list: "Lista de %{model}"
+  people:
+    animals: "Cadastrar animal"

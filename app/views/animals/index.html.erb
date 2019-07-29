@@ -35,5 +35,11 @@
 
 <br>
 
-<%= link_to t(:new, model: t('activerecord.models.animal.one')),
-  new_person_animal_path(@person) %>
+<div>
+  <%= link_to t(:new, model: t('activerecord.models.animal.one')),
+    new_person_animal_path(@person) %>
+</div>
+
+<div>
+  <%= link_to t(:back), people_path %>
+</div>

@@ -1,0 +1,11 @@
+<h1>PetLove</h1>
+<div>
+  <%= link_to t('home.list', model: t('activerecord.models.person.other')),
+    people_path %>
+</div>
+<div>
+  <%= link_to t(
+    'home.list', model: t('activerecord.models.animal_type.other')
+    ),
+    animal_types_path %>
+</div>
